@@ -1,0 +1,266 @@
+.hex:before {
+  content: " ";
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+.hex-logo:before {
+  border-bottom: 30px solid #ffc534;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+  top: -30px;
+}
+
+.hex-about:before {
+  border-bottom: 30px solid #ffc534;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+  top: -30px;
+}
+
+.hex {
+  position: relative;
+}
+.hex h1 {
+  font-family: "Permanent Marker", cursive;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 60px;
+  color: #fff;
+}
+.hex .hex-bee {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: -5vh;
+  right: -5%;
+  transform: rotate(45deg);
+  animation: MoveUpDown 4s ease-in-out infinite;
+}
+
+.hex-logo {
+  top: 12vh;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 104px;
+  height: 60px;
+  background-color: #ffc534;
+}
+
+.hex-about {
+  width: 104px;
+  height: 60px;
+  background-color: #ffc534;
+}
+
+.hex:after {
+  content: "";
+  width: 0;
+  position: absolute;
+}
+
+.hex-logo:after {
+  bottom: -30px;
+  border-top: 30px solid #ffc534;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+}
+
+.hex-about:after {
+  bottom: -30px;
+  border-top: 30px solid #ffc534;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    top: -5vh;
+    right: -5%;
+  }
+  50% {
+    top: -7vh;
+    right: -7%;
+  }
+}
+.watermark {
+  position: absolute;
+  bottom: 5vh;
+  right: 5%;
+  font-size: 1.75rem;
+  color: #fff;
+  z-index: 1;
+}
+
+.brush {
+  position: absolute;
+  font-size: 3rem;
+  text-align: left;
+  font-family: "Permanent Marker", cursive;
+  z-index: 2;
+}
+
+.slanted {
+  transform: rotate(-10deg);
+}
+
+.warm {
+  color: #ffc534;
+}
+
+.list-row-ul li {
+  font-size: 2rem;
+  color: #212529;
+}
+
+mark {
+  color: #212529;
+  font-weight: 700;
+  background-color: #fff;
+}
+
+h2, h3, h4, h5, h6, li, a {
+  font-family: "Gaegu", handwriting;
+  color: #212529;
+}
+
+strong {
+  position: relative;
+}
+strong::after {
+  content: "";
+  position: absolute;
+  bottom: -0.125rem;
+  left: -0.5rem;
+  right: -0.5rem;
+  height: 0.75rem;
+  z-index: -1;
+  background-image: url("../img/underline.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+p > strong {
+  font-weight: 400;
+}
+p > strong::after {
+  bottom: -0.2rem;
+  height: 0.5rem;
+  left: -0.25rem;
+  right: -0.25rem;
+}
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 1;
+  border-left: 7px solid #FDDC9A;
+}
+.sidebar ul {
+  margin-top: 20vh;
+  padding: 0;
+  text-align: center;
+}
+.sidebar ul li {
+  font-size: 1.5rem;
+  font-weight: 700;
+  list-style: none;
+  color: #9AAABF;
+}
+
+.light-bg {
+  background-color: #FDDC9A;
+}
+
+.dot-bg {
+  background: radial-gradient(#9AAABF 8%, transparent 8%), white;
+  background-position: 0 0, 25px 25px;
+  background-size: 25px 25px;
+}
+
+.intro-content {
+  margin-top: 100vh;
+  padding-top: 5vh;
+  border-left: 7px solid #FDDC9A;
+}
+.intro-content .define-row {
+  padding: 15vh;
+}
+.intro-content .list-row {
+  padding: 10vh 10%;
+}
+
+.focus-content {
+  border-right: 7px solid #FDDC9A;
+}
+.focus-content .row {
+  height: 50vh;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #ffc534;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* ---- stats.js ---- */
+.count-particles {
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  font-size: 0.8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.js-count-particles {
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles {
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#stats {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles {
+  border-radius: 0 0 3px 3px;
+}
+
+#particles-js {
+  top: 0;
+  left: 0;
+  border: 15px solid #fff;
+}
+
+/*# sourceMappingURL=main.css.map */

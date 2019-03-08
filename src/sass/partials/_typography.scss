@@ -1,0 +1,83 @@
+.watermark {
+    position: absolute;
+    bottom: 5vh;
+    right: 5%;
+    font-size: 1.75rem;
+    color: #fff;
+    z-index: 1;
+}
+
+.brush {
+    position: absolute;
+    font-size: 3rem;
+    text-align: left;
+    font-family: 'Permanent Marker', cursive;
+    z-index: 2;
+}
+
+.slanted {
+  transform: rotate(-10deg);
+}
+
+.warm {
+    color: #ffc534;
+}
+
+.list-row-ul {
+  li {
+    font-size: 2rem;
+    color: #212529;
+  }
+}
+
+mark {
+    color: #212529;
+    font-weight: 700;
+    background-color: #fff;
+}
+
+h2, h3, h4, h5, h6, li, a {
+    font-family: 'Gaegu', handwriting;
+    color: #212529;
+}
+
+strong {
+    position: relative;
+  
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -0.125rem;
+      left: -0.5rem;
+      right: -0.5rem;
+      height: 0.75rem;
+  
+      // Position the line behind the text so that
+      // it is still easily readable
+      z-index: -1;
+  
+      // The SVG is added as an SVG background image
+      background-image: url('../img/underline.svg');
+      background-repeat: no-repeat;
+  
+      // This allows the SVG to flex in size to fit
+      // any length of word. If the word is short,
+      // the SVG will be stretched vertically, if it
+      // is long, the SVG will be stretched horizontally.
+      // The jagged nature of this particular SVG works
+      // with this transforming.
+      background-size: cover;
+    }
+  }
+  
+  p > strong {
+    font-weight: 400;  
+  
+    &::after {
+      // Specific positioning for smaller text
+      bottom: -0.2rem;
+      height: 0.5rem;
+      left: -0.25rem;
+      right: -0.25rem;
+    }
+  }
