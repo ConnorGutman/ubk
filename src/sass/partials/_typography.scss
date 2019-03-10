@@ -8,14 +8,30 @@
 }
 
 .brush {
-    position: absolute;
     font-size: 3rem;
     text-align: left;
     font-family: 'Permanent Marker', cursive;
     z-index: 2;
 }
 
+.sidebar {
+  p {
+    font-family: 'Gaegu', handwriting;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+}
+
+.brush-alt {
+  position: relative;
+  font-size: 2rem;
+  text-align: left;
+  font-family: 'Permanent Marker', cursive;
+  z-index: 2;
+}
+
 .slanted {
+  position: absolute;
   transform: rotate(-10deg);
 }
 
@@ -79,5 +95,11 @@ strong {
       height: 0.5rem;
       left: -0.25rem;
       right: -0.25rem;
+    }
+  }
+
+  .city-focus {
+    h1, h2, h3, h4, h5, h6, p, li, a {
+      text-align: center;
     }
   }

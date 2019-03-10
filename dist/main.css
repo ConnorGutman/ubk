@@ -28,6 +28,7 @@
   vertical-align: middle;
   line-height: 60px;
   color: #fff;
+  font-size: 2rem;
 }
 .hex .hex-bee {
   position: absolute;
@@ -95,14 +96,28 @@
 }
 
 .brush {
-  position: absolute;
   font-size: 3rem;
   text-align: left;
   font-family: "Permanent Marker", cursive;
   z-index: 2;
 }
 
+.sidebar p {
+  font-family: "Gaegu", handwriting;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.brush-alt {
+  position: relative;
+  font-size: 2rem;
+  text-align: left;
+  font-family: "Permanent Marker", cursive;
+  z-index: 2;
+}
+
 .slanted {
+  position: absolute;
   transform: rotate(-10deg);
 }
 
@@ -152,6 +167,10 @@ p > strong::after {
   right: -0.25rem;
 }
 
+.city-focus h1, .city-focus h2, .city-focus h3, .city-focus h4, .city-focus h5, .city-focus h6, .city-focus p, .city-focus li, .city-focus a {
+  text-align: center;
+}
+
 .sidebar {
   position: absolute;
   top: 0;
@@ -162,8 +181,14 @@ p > strong::after {
   z-index: 1;
   border-left: 7px solid #FDDC9A;
 }
-.sidebar ul {
+.sidebar p {
   margin-top: 20vh;
+  text-align: center;
+  margin-left: 15%;
+  margin-right: 15%;
+  color: #ffc534;
+}
+.sidebar ul {
   padding: 0;
   text-align: center;
 }
@@ -194,6 +219,12 @@ p > strong::after {
 }
 .intro-content .list-row {
   padding: 10vh 10%;
+}
+
+.city-focus img {
+  width: 50%;
+  border: 5px solid #ffc534;
+  border-radius: 50%;
 }
 
 .focus-content {

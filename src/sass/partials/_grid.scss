@@ -7,8 +7,14 @@
     background-color: #fff;
     z-index: 1;
     border-left: 7px solid #FDDC9A;
+    p {
+    margin-top: 20vh;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    color: #ffc534;
+    }
     ul {
-        margin-top: 20vh;
         padding: 0;
         text-align: center;
         li {
@@ -39,6 +45,14 @@
     }
     .list-row {
         padding: 10vh 10%;
+    }
+}
+
+.city-focus {
+    img {
+        width: 50%;
+        border: 5px solid #ffc534;
+        border-radius: 50%;
     }
 }
 
