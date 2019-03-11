@@ -20,7 +20,7 @@ particlesJS("particles-js", {
                 "nb_sides": 5
             },
             "image": {
-                "src": "../img/bee.png",
+                "src": "https://connor.io/ubk/img/bee.png",
                 "width": 400,
                 "height": 400
             }
