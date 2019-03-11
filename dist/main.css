@@ -242,6 +242,7 @@ p > strong::after {
 }
 
 .citations p {
+  text-align: center;
   font-size: 1.5rem;
   color: #fff;
 }
