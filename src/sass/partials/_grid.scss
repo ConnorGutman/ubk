@@ -15,13 +15,20 @@
     color: #ffc534;
     }
     ul {
+        margin-top: 20vh;
         padding: 0;
         text-align: center;
         li {
+            a {
             font-size: 1.5rem;
             font-weight: 700;
             list-style: none;
             color: #9AAABF;
+            text-decoration: underline;
+            &:hover {
+                color: #FDDC9A;
+            }
+            }
         }
     }
 }
@@ -45,10 +52,30 @@
     }
     .list-row {
         padding: 10vh 10%;
+        div {
+            margin-bottom: 5vh;
+        }
+    }
+    @media (max-width: 575.98px) { 
+        .define-row {
+            padding: 5%;
+        }
+        .list-row {
+            padding: 5%;
+        }
+        .hex {
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+        h2 {
+            margin-top: 25vh;
+        }
     }
 }
 
 .city-focus {
+    padding: 10vh 5%;
     img {
         width: 50%;
         border: 5px solid #ffc534;
@@ -58,7 +85,46 @@
 
 .focus-content {
     border-right: 7px solid #FDDC9A; 
+    .carousel {
+        border-left: 7px solid #fddc9a;
+        border-bottom: 14px solid #fddc9a;
+    }
+    .col-12 {
+        padding: 0;
+    }
+    img {
+        height: 90vh;
+    }
+}
+
+.container-tutorial {
     .row {
-        height: 50vh;
-    }   
+    padding: 10vh 10%;
+}
+    border-right: 7px solid #FDDC9A; 
+}
+
+.carousel-item {
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 90vh;
+        background-color: rgba(0,0,0,0.25);
+    }
+}
+
+.citations {
+    background-color: #212529;
+    border-top: 7px solid #FDDC9A; 
+    padding: 5%;
+    .brush {
+        text-align: center;
+        color: #fff;
+        strong {
+            z-index: 2;
+        }
+    }
 }

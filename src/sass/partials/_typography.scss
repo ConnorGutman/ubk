@@ -102,4 +102,101 @@ strong {
     h1, h2, h3, h4, h5, h6, p, li, a {
       text-align: center;
     }
+    .brush {
+      color: #212529;
+      font-size: 3rem;
+      text-align: right;
+      span {
+        color: #f3bc34;
+        strong {
+          z-index: 2;
+        }
+      }
+    }
+    .subtext {
+      text-align: right;
+      margin: 2vh 0 2vh 20%;
+      font-family: 'Gaegu', handwriting;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #212529;
+    }
+
+    @media (max-width: 575.98px) {
+      .brush, .subtext {
+        text-align: center;
+      }  
+      .subtext {
+        margin: 2vh 0;
+      }
+    }
+  }
+
+  .carousel {
+    .carousel-caption {
+      bottom: 30vh;
+    }
+    h2 {
+      color: #fff;
+      font-size: 5rem;
+    }
+    p {
+      font-size: 2rem;
+      color: #fff;
+      a {
+        color: #ffc534;
+        text-decoration: underline;
+      }
+    }
+    @media (max-width: 575.98px) { 
+      h2 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .define-row {
+    @media (max-width: 575.98px) {
+      h2 {
+        margin-top: 35vh;
+      }
+    }
+  }
+
+  .list-row {
+    a {
+      color:  #ffc534;
+      text-decoration: underline;
+    }
+  }
+
+  #costs {
+    h1 {
+      margin-top: 5vh;
+    }
+  }
+
+  #resources {
+    h1 {
+      margin-top: 5vh;
+    }
+  }
+
+  .citations {
+    p {
+      font-size: 1.5rem;
+      color: #fff;
+      a {
+        color:  #ffc534;
+        text-decoration: underline;
+      }
+    }
+    @media (max-width: 575.98px) {
+      p {
+        font-size: 0.75rem;
+      }
+    }
   }

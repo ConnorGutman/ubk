@@ -170,6 +170,90 @@ p > strong::after {
 .city-focus h1, .city-focus h2, .city-focus h3, .city-focus h4, .city-focus h5, .city-focus h6, .city-focus p, .city-focus li, .city-focus a {
   text-align: center;
 }
+.city-focus .brush {
+  color: #212529;
+  font-size: 3rem;
+  text-align: right;
+}
+.city-focus .brush span {
+  color: #f3bc34;
+}
+.city-focus .brush span strong {
+  z-index: 2;
+}
+.city-focus .subtext {
+  text-align: right;
+  margin: 2vh 0 2vh 20%;
+  font-family: "Gaegu", handwriting;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #212529;
+}
+@media (max-width: 575.98px) {
+  .city-focus .brush, .city-focus .subtext {
+    text-align: center;
+  }
+  .city-focus .subtext {
+    margin: 2vh 0;
+  }
+}
+
+.carousel .carousel-caption {
+  bottom: 30vh;
+}
+.carousel h2 {
+  color: #fff;
+  font-size: 5rem;
+}
+.carousel p {
+  font-size: 2rem;
+  color: #fff;
+}
+.carousel p a {
+  color: #ffc534;
+  text-decoration: underline;
+}
+@media (max-width: 575.98px) {
+  .carousel h2 {
+    font-size: 2rem;
+  }
+  .carousel p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .define-row h2 {
+    margin-top: 35vh;
+  }
+}
+
+.list-row a {
+  color: #ffc534;
+  text-decoration: underline;
+}
+
+#costs h1 {
+  margin-top: 5vh;
+}
+
+#resources h1 {
+  margin-top: 5vh;
+}
+
+.citations p {
+  font-size: 1.5rem;
+  color: #fff;
+}
+.citations p a {
+  color: #ffc534;
+  text-decoration: underline;
+}
+@media (max-width: 575.98px) {
+  .citations p {
+    font-size: 0.75rem;
+  }
+}
 
 .sidebar {
   position: absolute;
@@ -189,14 +273,19 @@ p > strong::after {
   color: #ffc534;
 }
 .sidebar ul {
+  margin-top: 20vh;
   padding: 0;
   text-align: center;
 }
-.sidebar ul li {
+.sidebar ul li a {
   font-size: 1.5rem;
   font-weight: 700;
   list-style: none;
   color: #9AAABF;
+  text-decoration: underline;
+}
+.sidebar ul li a:hover {
+  color: #FDDC9A;
 }
 
 .light-bg {
@@ -220,7 +309,29 @@ p > strong::after {
 .intro-content .list-row {
   padding: 10vh 10%;
 }
+.intro-content .list-row div {
+  margin-bottom: 5vh;
+}
+@media (max-width: 575.98px) {
+  .intro-content .define-row {
+    padding: 5%;
+  }
+  .intro-content .list-row {
+    padding: 5%;
+  }
+  .intro-content .hex {
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  .intro-content h2 {
+    margin-top: 25vh;
+  }
+}
 
+.city-focus {
+  padding: 10vh 5%;
+}
 .city-focus img {
   width: 50%;
   border: 5px solid #ffc534;
@@ -230,8 +341,45 @@ p > strong::after {
 .focus-content {
   border-right: 7px solid #FDDC9A;
 }
-.focus-content .row {
-  height: 50vh;
+.focus-content .carousel {
+  border-left: 7px solid #fddc9a;
+  border-bottom: 14px solid #fddc9a;
+}
+.focus-content .col-12 {
+  padding: 0;
+}
+.focus-content img {
+  height: 90vh;
+}
+
+.container-tutorial {
+  border-right: 7px solid #FDDC9A;
+}
+.container-tutorial .row {
+  padding: 10vh 10%;
+}
+
+.carousel-item:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90vh;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.citations {
+  background-color: #212529;
+  border-top: 7px solid #FDDC9A;
+  padding: 5%;
+}
+.citations .brush {
+  text-align: center;
+  color: #fff;
+}
+.citations .brush strong {
+  z-index: 2;
 }
 
 canvas {
